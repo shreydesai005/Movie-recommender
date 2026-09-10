@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie Recommender
+
+A movie recommendation web app built with Next.js.
+
+> **Note for the repo owner**: I generated this README from your repo's
+> real folder structure, `package.json`, and commit history — not by
+> guessing at a typical movie-recommender pattern. I could confirm the
+> tech stack and file layout, but not the actual recommendation logic or
+> data source (the `data/` folder's contents and the recommendation
+> approach itself aren't visible from the file tree alone). The
+> **"How It Works"** section below is a placeholder — fill it in with
+> the real approach (content-based? an external API? a static local
+> dataset?) and delete this note once you have.
+
+## Tech Stack
+
+- **[Next.js 16](https://nextjs.org)** (App Router) — very recent version; if you're using an AI coding assistant on this repo, note the project's own `AGENTS.md` flags real breaking changes from what older training data expects
+- **React 19** + **TypeScript**
+- **Tailwind CSS v4** for styling
+- **Framer Motion** for animations
+- **Lucide React** for icons
+
+## Project Structure
+
+```
+├── app/            # Next.js App Router pages and layouts
+├── components/     # React components
+├── data/           # Movie data (source/format: TODO — describe here)
+├── public/         # Static assets
+├── types/          # TypeScript type definitions
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── eslint.config.mjs
+```
+
+## How It Works
+
+<!-- TODO: describe the actual recommendation approach here, e.g.:
+- Is `data/` a static local dataset, or does the app call an external API?
+- What's the recommendation method — content similarity, a fixed
+  curated list, something else?
+- Any notable UI/UX details worth calling out (the animations via
+  Framer Motion, for instance)?
+-->
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other available scripts (from `package.json`):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build   # production build
+npm run start   # run the production build
+npm run lint    # eslint
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deployed on [Vercel](https://vercel.com).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<!-- TODO: add a license if you want one (MIT is the common default for personal projects) -->
